@@ -115,6 +115,7 @@ This was managed by [sliders](/Assets/Scripts/PlayerHealthbar.cs)
 <img src="./Materials/User Interface & Input/TutorialScreen.png" width="40%">
 
 ## Movement/Physics - Jessica Frost
+
 ###Overall Physics
 In our game, movement and physics are fundamental to the player experience. As such, we decided to implement a basic `2D RigidBody` component, as well as a `2D Box Collider`, for the player character. This provides a solid foundation for realistic interactions within the game world, including the basic player movement. Building on this, many environmental elements, such as buildings and terrain, utilize tilemap colliders to ensure previse collision detection and response.
 
@@ -131,6 +132,7 @@ After playing around with some different values for both the sprint duration and
 Within `PlayerSprint.cs`, the `Update()` method is called every frame to test for both if the character is currently pressing the sprint key, and if the current stamina is above 0 in order to determine whether to start or stop sprinting. The `FixedUpdate()` method is used to determine if the player has exceeded their sprint duration, as well as deal with some stamina related aspects. 
 
 ###Stamina
+
 ####Basic Stamina System
 As mentioned previously, I wanted to add a sense of realism to the sprint mechanic so that the player would not be able to abuse the use of increased speed. As a result, in addition to the sprint duration I implemented a stamina system in `PlayerStaminaBar.cs` to be used in tandem with the sprint mechanic. This limits the amount of sprint the player character is able to use before having to wait for the stamina to regnerate. 
 
